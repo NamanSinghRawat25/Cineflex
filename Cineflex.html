@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlex - Your Ultimate Cinema Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: #222;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .content {
+            margin: 20px;
+            padding: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e50914;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #b20710;
+        }
+    </style>
+    <script>
+        function redirectToPayment() {
+            window.location.href = "payment.html";
+        }
+
+        function confirmPayment() {
+            alert("Payment successful! You can watch movies for the next 1 month.");
+            window.location.href = "Movies.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CineFlex</h1>
+    </header>
+    <div class="content">
+        <h2>Experience Movies Like Never Before</h2>
+        <p>Enjoy the latest blockbusters in ultra-high definition and immersive sound.</p>
+        <a href="Subscription.html" class="btn" onclick="redirectToPayment()">Book Now</a>
+    </div>
+</body>
+</html>
